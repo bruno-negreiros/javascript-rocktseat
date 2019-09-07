@@ -6,14 +6,15 @@
     </head>
     <body>
         <script>
-            function soma(numero1, numero2) {
-                var resultado = numero1 + numero2;
-
-                return resultado;
+            function exibeAlgo() {
+                console.log('Hello World!');
             }
 
-            var resultado = soma(1, 2);
-            console.log(resultado);
+            // Executa várias vezes após o intervalo estipulado, enquanto nao for encerrada.
+            setInterval(exibeAlgo, 5000);
+
+            // Executa somente 1 vez, após o intervalo estipulado.
+            // setTimeout(exibeAlgo, 5000);
         </script>
     </body>
 </html>
