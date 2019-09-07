@@ -5,16 +5,32 @@
         <meta charset="utf-8">
     </head>
     <body>
+        <div id="app">
+            <input type="text" name="nome" id="nome" class="nome">
+            <input type="text" name="nome2" id="nome2" class="nome2">
+            <button class="botao">Adicionar</button>        
+        </div>
         <script>
-            function exibeAlgo() {
-                console.log('Hello World!');
+            var inputElement;
+            // inputElement = document.getElementById('nome');
+            // inputElement = document.getElementsByClassName('nome2');
+            // inputElement = document.getElementsByTagName('input');
+            // inputElement = document.querySelector('body div#app input');
+            // inputElement = document.querySelector('div#app input');
+            // inputElement = document.querySelector('input');
+            // inputElement = document.querySelector('input[name=nome]');
+            // inputElement = document.querySelectorAll('input');
+
+            // console.log(inputElement);
+
+            var btnElement = document.querySelector('button.botao');
+            inputElement = document.querySelector('input[name=nome');
+
+            btnElement.onclick = function() {
+                var text = inputElement.value;
+
+                alert('Botão clicado! texto = ' + text);
             }
-
-            // Executa várias vezes após o intervalo estipulado, enquanto nao for encerrada.
-            setInterval(exibeAlgo, 5000);
-
-            // Executa somente 1 vez, após o intervalo estipulado.
-            // setTimeout(exibeAlgo, 5000);
         </script>
     </body>
 </html>
