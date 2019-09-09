@@ -8,21 +8,14 @@
 
 <body>
     <div id="app">
-        <span id="aeeeeee">AEEEEEE</span>
+       <div class="box"></div>
     </div>
     <script>
-        var containerElement = document.querySelector('#app');
-        var linkElement = document.createElement('a');
-        var textElement = document.createTextNode('Acessar site da Rocketseat');
-        var spanElement = document.querySelector('#aeeeeee');
-        
-        linkElement.setAttribute('href', 'http://rocketseat.com.br');
-        linkElement.setAttribute('id', 'linkElement');
+        var boxElement = document.querySelector('.box');
 
-        linkElement.appendChild(textElement);
-        containerElement.appendChild(linkElement);
-        
-        containerElement.removeChild(spanElement);
+        boxElement.style.height = '100px';
+        boxElement.style.width = '100px';
+        boxElement.style.backgroundColor = 'red';
     </script>
 </body>
 
