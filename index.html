@@ -8,14 +8,29 @@
 
 <body>
     <div id="app">
-       <div class="box"></div>
+        <button id="btn">generate a box</button>
     </div>
     <script>
-        var boxElement = document.querySelector('.box');
+        // Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+        // vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+        // aparecer na tela.
 
-        boxElement.style.height = '100px';
-        boxElement.style.width = '100px';
-        boxElement.style.backgroundColor = 'red';
+        var buttonElement = document.querySelector('#btn');
+        var containerElement = document.querySelector('#app');
+
+        buttonElement.onclick = function() {
+            var boxElement = document.createElement('div');
+
+            boxElement.style.width = '100px';
+            boxElement.style.height = '100px';
+            boxElement.style.backgroundColor = 'red';
+            boxElement.style.marginBottom = '10px';
+
+            buttonElement.style.marginBottom = '10px';
+
+            containerElement.append(boxElement);
+        }
+
     </script>
 </body>
 
