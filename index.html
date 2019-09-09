@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Curso Javascript</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div id="app">
-            <input type="text" name="nome" id="nome" class="nome">
-            <input type="text" name="nome2" id="nome2" class="nome2">
-            <button class="botao">Adicionar</button>        
-        </div>
-        <script>
-            var inputElement;
-            // inputElement = document.getElementById('nome');
-            // inputElement = document.getElementsByClassName('nome2');
-            // inputElement = document.getElementsByTagName('input');
-            // inputElement = document.querySelector('body div#app input');
-            // inputElement = document.querySelector('div#app input');
-            // inputElement = document.querySelector('input');
-            // inputElement = document.querySelector('input[name=nome]');
-            // inputElement = document.querySelectorAll('input');
 
-            // console.log(inputElement);
+<head>
+    <title>Curso Javascript</title>
+    <meta charset="utf-8">
+</head>
 
-            var btnElement = document.querySelector('button.botao');
-            inputElement = document.querySelector('input[name=nome');
+<body>
+    <div id="app">
+        <span id="aeeeeee">AEEEEEE</span>
+    </div>
+    <script>
+        var containerElement = document.querySelector('#app');
+        var linkElement = document.createElement('a');
+        var textElement = document.createTextNode('Acessar site da Rocketseat');
+        var spanElement = document.querySelector('#aeeeeee');
+        
+        linkElement.setAttribute('href', 'http://rocketseat.com.br');
+        linkElement.setAttribute('id', 'linkElement');
 
-            btnElement.onclick = function() {
-                var text = inputElement.value;
+        linkElement.appendChild(textElement);
+        containerElement.appendChild(linkElement);
+        
+        containerElement.removeChild(spanElement);
+    </script>
+</body>
 
-                alert('Botão clicado! texto = ' + text);
-            }
-        </script>
-    </body>
 </html>
